@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from "prop-types";
 import { render } from 'react-dom';
 
 const FlightDetail = (props) => (
@@ -9,5 +10,9 @@ const FlightDetail = (props) => (
         <div>{props.flight.arrival}</div>
     </div>
 );
+
+FlightDetail.propTypes = {
+    flight: PropTypes.object
+};
 
 export default FlightDetail

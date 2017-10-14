@@ -1,51 +1,82 @@
 [
     {
-        "Name": "flight1",
-        "imageUrl": "image1",
-        "name": "flight1",
-        "description": "flight1",
-        "id": 1
+        "number": "AI 202",
+        "departure": "Pune",
+        "departurecode": "PNQ",
+        "arrival": "Delhi",
+        "arrivalcode": "DEL",
+        "departuretime": "10.00 AM",
+        "arrivaltime": "12.00 PM",
+        "charges": 2323
     },
     {
-        "Name": "flight2",
-        "imageUrl": "image2",
-        "name": "flight2",
-        "description": "flight2",
-        "id": 2
+        "number": "AI 203",
+        "departure": "Delhi",
+        "departurecode": "DEL",
+        "arrival": "Pune",
+        "arrivalcode": "PNQ",
+        "departuretime": "10.00 AM",
+        "arrivaltime": "12.00 PM",
+        "charges": 2323
     },
     {
-        "Name": "flight3",
-        "imageUrl": "image3",
-        "name": "flight3",
-        "description": "flight3",
-        "id": 3
+        "number": "AI 204",
+        "departure": "Pune",
+        "departurecode": "PNQ",
+        "arrival": "Delhi",
+        "arrivalcode": "DEL",
+        "departuretime": "10.00 AM",
+        "arrivaltime": "12.00 PM",
+        "charges": 2323
     },
     {
-        "Name": "flight4",
-        "imageUrl": "image4",
-        "name": "flight4",
-        "description": "flight4",
-        "id": 4
+        "number": "AI 205",
+        "departure": "Delhi",
+        "departurecode": "DEL",
+        "arrival": "Pune",
+        "arrivalcode": "PNQ",
+        "departuretime": "10.00 AM",
+        "arrivaltime": "12.00 PM",
+        "charges": 2323
     },
     {
-        "Name": "flight5",
-        "imageUrl": "image5",
-        "name": "flight5",
-        "description": "flight5",
-        "id": 5
+        "number": "AI 206",
+        "departure": "Pune",
+        "departurecode": "PNQ",
+        "arrival": "Delhi",
+        "arrivalcode": "DEL",
+        "departuretime": "10.00 AM",
+        "arrivaltime": "12.00 PM",
+        "charges": 2323
     },
     {
-        "Name": "flight6",
-        "imageUrl": "image6",
-        "name": "flight6",
-        "description": "flight6",
-        "id": 6
+        "number": "AI 207",
+        "departure": "Delhi",
+        "departurecode": "DEL",
+        "arrival": "Pune",
+        "arrivalcode": "PNQ",
+        "departuretime": "10.00 AM",
+        "arrivaltime": "12.00 PM",
+        "charges": 2323
     },
     {
-        "Name": "flight7",
-        "imageUrl": "image7",
-        "name": "flight7",
-        "description": "flight7",
-        "id": 7
+        "number": "AI 208",
+        "departure": "Pune",
+        "departurecode": "PNQ",
+        "arrival": "Delhi",
+        "arrivalcode": "DEL",
+        "departuretime": "10.00 AM",
+        "arrivaltime": "12.00 PM",
+        "charges": 2323
+    },
+    {
+        "number": "AI 209",
+        "departure": "Pune",
+        "departurecode": "PNQ",
+        "arrival": "Delhi",
+        "arrivalcode": "DEL",
+        "departuretime": "10.00 AM",
+        "arrivaltime": "12.00 PM",
+        "charges": 2323
     }
 ]
