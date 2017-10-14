@@ -1,0 +1,51 @@
+[
+    {
+        "Name": "flight1",
+        "imageUrl": "image1",
+        "name": "flight1",
+        "description": "flight1",
+        "id": 1
+    },
+    {
+        "Name": "flight2",
+        "imageUrl": "image2",
+        "name": "flight2",
+        "description": "flight2",
+        "id": 2
+    },
+    {
+        "Name": "flight3",
+        "imageUrl": "image3",
+        "name": "flight3",
+        "description": "flight3",
+        "id": 3
+    },
+    {
+        "Name": "flight4",
+        "imageUrl": "image4",
+        "name": "flight4",
+        "description": "flight4",
+        "id": 4
+    },
+    {
+        "Name": "flight5",
+        "imageUrl": "image5",
+        "name": "flight5",
+        "description": "flight5",
+        "id": 5
+    },
+    {
+        "Name": "flight6",
+        "imageUrl": "image6",
+        "name": "flight6",
+        "description": "flight6",
+        "id": 6
+    },
+    {
+        "Name": "flight7",
+        "imageUrl": "image7",
+        "name": "flight7",
+        "description": "flight7",
+        "id": 7
+    }
+]
