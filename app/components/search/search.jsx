@@ -8,7 +8,7 @@ class Search extends Component {
         return (
             <div>
                 <h1>Search</h1>
-                <SearchFilter />
+                <SearchFilter searchFlight={this.props.searchFlight}/>
                 <ExtendedSearch />
             </div>
         );

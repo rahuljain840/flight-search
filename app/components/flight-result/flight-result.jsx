@@ -12,7 +12,9 @@ class FlightResult extends Component {
                 </div>
 
                 <div className="row" id="content">
-                    <Flight />
+                    {
+                        this.props.flights.map((flight, index) => <Flight key={index} flight={flight} />)
+                    }
                 </div>
             </div>
         );

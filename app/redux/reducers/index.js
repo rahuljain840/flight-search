@@ -1,22 +1,31 @@
 import { INIT_ACTION, SEARCH_FLIGHTS, REFINE_BY_PRICE } from '../actions';
 const initialState = {
     flights: [],
-    flight: {},
-    isSuccess: false
+    isSuccess: false,
+    isLoading: false
 };
 
 export const flightReducer = (state = initialState, action) => {
     switch (action.type) {
+        case INIT_ACTION:
+            return {
+                ...state,
+                isLoading: true
+            }
         case SEARCH_FLIGHTS:
             return {
                 ...state,
-                flights: action.flights
+                isSuccess: true,
+                isLoading: false,
+                flights: action.data
             };
 
         case REFINE_BY_PRICE:
             return {
                 ...state,
-                flights: action.flights
+                isSuccess: true,
+                isLoading: false,
+                flights: action.data
             };
 
         default:

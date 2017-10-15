@@ -6,19 +6,20 @@ import FlightDetail from '../flight-detail';
 class Flight extends Component {
 
     render() {
+        let isRound = this.props.flight && this.props.flight.destination;
         return (
             <div className="border-box">
                 {this.props.flight ? (
                     <div>
                         <div className="flight">
                             <div className="charges">
-                                {this.props.isRound ?
-                                    this.props.flight.source.amount + this.props.flight.destination.amount
-                                    : this.props.flight.source.amount}
+                                {isRound ?
+                                    this.props.flight.source.charges + this.props.flight.destination.charges
+                                    : this.props.flight.source.charges}
                             </div>
                             <div className="route-details">
                                 <FlightDetail flight={this.props.flight.source} />
-                                {this.props.isRound ?
+                                {isRound ?
                                     <FlightDetail flight={this.props.flight.destination} /> :
                                     null}
                             </div>

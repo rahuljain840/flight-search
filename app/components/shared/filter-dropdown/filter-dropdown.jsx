@@ -6,7 +6,7 @@ const FilterDropdown = (props) => (
     <select value={props.passenger}>
         <option value=''>{props.placeholderText}</option>
         {
-            props.passengers.map((option, index) => {
+            [1,2,3,4,5,6,7,8,9].map((option, index) => {
                 return <option key={index} value={option}>{option}</option>
             })
         }

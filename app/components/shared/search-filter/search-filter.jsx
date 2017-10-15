@@ -22,8 +22,7 @@ class SearchFilter extends Component {
 
     searchFlights = (e) => {
         e.preventDefault();
-
-
+        this.props.searchFlight();
     }
 
     render() {
