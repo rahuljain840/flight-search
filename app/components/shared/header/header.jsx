@@ -4,7 +4,7 @@ import { render } from 'react-dom';
 class Header extends Component {
     render() {
         return (
-            <div id="bar">
+            <div className="header">
                 <h2>Flight Search Engine</h2>
             </div>
         );

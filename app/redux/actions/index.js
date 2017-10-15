@@ -1,6 +1,6 @@
-const INIT_ACTION = 'INIT_ACTION';
-const SEARCH_FLIGHTS = 'SEARCH_FLIGHTS';
-const REFINE_BY_PRICE = 'REFINE_BY_PRICE';
+export const INIT_ACTION = 'INIT_ACTION';
+export const SEARCH_FLIGHTS = 'SEARCH_FLIGHTS';
+export const REFINE_BY_PRICE = 'REFINE_BY_PRICE';
 
 export const initAction = () => {
     return {

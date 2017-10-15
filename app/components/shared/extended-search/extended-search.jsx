@@ -5,9 +5,7 @@ class ExtendedSearch extends Component {
     render() {
         return (
             <div className="row">
-                <div className="col-sm-3">
-                    <p>ExtendedSearch</p>
-                </div>
+                <p>ExtendedSearch</p>
             </div>
         );
     }
