@@ -3,12 +3,20 @@ import PropTypes from "prop-types";
 import { render } from 'react-dom';
 
 const FilterDropdown = (props) => (
-    <input type="text" className="form-control" placeholder={props.placeholderText} value={props.city} />
+    <select value={props.passenger}>
+        <option value=''>{props.placeholderText}</option>
+        {
+            props.passengers.map((option, index) => {
+                return <option key={index} value={option}>{option}</option>
+            })
+        }
+    </select>
 );
 
 FilterDropdown.propTypes = {
     placeholderText: PropTypes.string,
-    date: PropTypes.string
+    passengers: PropTypes.array,
+    passenger: PropTypes.number
 };
 
 export default FilterDropdown
