@@ -39,7 +39,7 @@ class SearchFilter extends Component {
     }
 
     searchFlights = (e) => {
-        e.preventDefault();
+        e.preventDefault();        
 
         var filters = {
             departureDate: this.state.departureDate,
@@ -47,6 +47,17 @@ class SearchFilter extends Component {
             origin: this.state.originCity,
             destination: this.state.destinationCity,
             isRound: this.state.isRound
+        }
+
+        if(filters.isRound && !(filters.departureDate && filters.arrivalDate && filters.origin && filters.destination))
+        {
+            alert('Please enter all search fields');
+            return;
+        }
+
+        if(!filters.isRound && !(filters.departureDate && filters.origin && filters.destination)){
+            alert('Please enter all search fields');
+            return;
         }
 
         this.props.searchFlight(filters);

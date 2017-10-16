@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from "prop-types";
 import { render } from 'react-dom';
+import moment from 'moment';
 
 const SearchBreadCrumb = (props) => (
     <div className="breadcrumbWrapper">
@@ -16,9 +17,12 @@ const SearchBreadCrumb = (props) => (
                         }
                         </h3>
                     </div>
-                    <div className="col-md-7">
-                        <div className="row"><b>Departure: {props.filters.departure}</b></div>
-                        <div className="row"><b>Arrival: {props.filters.return}</b></div>
+                    <div className="col-md-7">                        
+                        <div className="row"><b>Departure: {moment(props.filters.departureDate).format('DD MMM YYYY')}</b></div>
+                        {props.filters.isRound ? 
+                        <div className="row"><b>Arrival: {moment(props.filters.arrivalDate).format('DD MMM YYYY')}</b></div> : 
+                        <div />
+                    }
                     </div>
                 </div>
             ) :

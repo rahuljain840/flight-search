@@ -35,8 +35,8 @@ export const search = (filters) => {
             var flights = [];
             var departFlights = data.filter((flight) => {
                 const flightDepartureDate = new Date(flight.departuretime);
-                if ((filters.origin == flight.departurecode || filters.origin == flight.departure) && 
-                    (filters.destination == flight.arrivalcode || filters.destination == flight.arrival) && 
+                if ((filters.origin.toLowerCase() == flight.departurecode.toLowerCase() || filters.origin.toLowerCase() == flight.departure.toLowerCase()) && 
+                    (filters.destination.toLowerCase() == flight.arrivalcode.toLowerCase() || filters.destination.toLowerCase() == flight.arrival.toLowerCase()) && 
                     flightDepartureDate >= new Date(filters.departureDate)) {
                     return flight;
                 }
@@ -46,8 +46,8 @@ export const search = (filters) => {
             if (filters.isRound) {
                 arrivalFlights = data.filter((flight) => {
                     const flightArrivalDate = new Date(flight.arrivaltime);
-                    if ((filters.origin == flight.arrivalcode || filters.origin == flight.arrival) && 
-                        (filters.destination == flight.departurecode || filters.destination == flight.departure) && 
+                    if ((filters.origin.toLowerCase() == flight.arrivalcode.toLowerCase() || filters.origin.toLowerCase() == flight.arrival.toLowerCase()) && 
+                        (filters.destination.toLowerCase() == flight.departurecode.toLowerCase() || filters.destination.toLowerCase() == flight.departure.toLowerCase()) && 
                         flightArrivalDate >= new Date(filters.arrivalDate)) {
                         return flight;
                     }
