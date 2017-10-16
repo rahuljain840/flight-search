@@ -10,7 +10,8 @@ class HomeContainer extends Component {
         super(props);
 
         this.state = {
-            filters: null
+            filters: null,
+            flights: []
         };
     }
 
@@ -19,17 +20,35 @@ class HomeContainer extends Component {
         this.props.searchFlights(filters);
 
         this.setState({ filters: filters });
+        this.setState({ flights: this.props.flights });
+    }
+
+    sliderChange = (value) => {
+        var flights = this.props.flights.filter((flight) => {
+            if (this.state.filters.isRound) {
+                if ((flight.source.charges + flight.destination.charges) <= value) {
+                    return flight;
+                }
+            }
+            else {
+                if (flight.source.charges <= value) {
+                    return flight;
+                }
+            }
+        });
+
+        this.setState({ flights: flights });
     }
 
     render() {
         return (
-            <Home searchFlight={this.searchFlight} flights={this.props.flights} filters={this.state.filters} />
+            <Home searchFlight={this.searchFlight} flights={this.props.flights}
+                filters={this.state.filters} sliderChange={this.sliderChange} />
         );
     }
 }
 
 const mapStateToProps = (state) => {
-    console.log("state is---------", state);
     return {
         flights: state.flightReducer.flights
     };

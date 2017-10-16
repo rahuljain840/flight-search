@@ -11,7 +11,13 @@ class Home extends Component {
         return (
             <div className="row">
                 <div className="col-md-3 left-section">
-                    <Search searchFlight={this.props.searchFlight} />
+                    <Search
+                        searchFlight={this.props.searchFlight}
+                        min={this.props.min}
+                        max={this.props.max}
+                        step={this.props.step}
+                        marks={this.props.marks}
+                        sliderChange={this.props.sliderChange} />
                 </div>
                 <div className="col-md-9 right-section">
                     <SearchBreadCrumb filters={this.props.filters} />

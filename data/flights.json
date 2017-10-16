@@ -5,8 +5,8 @@
         "departurecode": "PNQ",
         "arrival": "Delhi",
         "arrivalcode": "DEL",
-        "departuretime": "Sun Oct 17 2017 15:51:13 GMT+0530 (IST)",
-        "arrivaltime": "Sun Oct 18 2017 15:51:13 GMT+0530 (IST)",
+        "departuretime": "Sun Oct 25 2017 15:51:13 GMT+0530 (IST)",
+        "arrivaltime": "Sun Oct 28 2017 15:51:13 GMT+0530 (IST)",
         "charges": 2323
     },
     {
@@ -15,9 +15,9 @@
         "departurecode": "DEL",
         "arrival": "Pune",
         "arrivalcode": "PNQ",
-        "departuretime": "Sun Oct 18 2017 15:51:13 GMT+0530 (IST)",
-        "arrivaltime": "Sun Oct 19 2017 15:51:13 GMT+0530 (IST)",
-        "charges": 2323
+        "departuretime": "Sun Oct 21 2017 15:51:13 GMT+0530 (IST)",
+        "arrivaltime": "Sun Oct 29 2017 15:51:13 GMT+0530 (IST)",
+        "charges": 3323
     },
     {
         "number": "AI 204",
@@ -25,9 +25,9 @@
         "departurecode": "PNQ",
         "arrival": "Delhi",
         "arrivalcode": "DEL",
-        "departuretime": "Sun Oct 16 2017 15:51:13 GMT+0530 (IST)",
-        "arrivaltime": "Sun Oct 18 2017 15:51:13 GMT+0530 (IST)",
-        "charges": 2323
+        "departuretime": "Sun Oct 18 2017 15:51:13 GMT+0530 (IST)",
+        "arrivaltime": "Sun Oct 28 2017 15:51:13 GMT+0530 (IST)",
+        "charges": 5323
     },
     {
         "number": "AI 205",
@@ -35,9 +35,9 @@
         "departurecode": "DEL",
         "arrival": "Pune",
         "arrivalcode": "PNQ",
-        "departuretime": "Sun Oct 01 2017 15:51:13 GMT+0530 (IST)",
-        "arrivaltime": "Sun Oct 18 2017 15:51:13 GMT+0530 (IST)",
-        "charges": 2323
+        "departuretime": "Sun Oct 21 2017 15:51:13 GMT+0530 (IST)",
+        "arrivaltime": "Sun Oct 28 2017 15:51:13 GMT+0530 (IST)",
+        "charges": 1323
     },
     {
         "number": "AI 206",
@@ -45,9 +45,9 @@
         "departurecode": "PNQ",
         "arrival": "Delhi",
         "arrivalcode": "DEL",
-        "departuretime": "Sun Oct 01 2017 15:51:13 GMT+0530 (IST)",
-        "arrivaltime": "Sun Oct 18 2017 15:51:13 GMT+0530 (IST)",
-        "charges": 2323
+        "departuretime": "Sun Oct 22 2017 15:51:13 GMT+0530 (IST)",
+        "arrivaltime": "Sun Oct 26 2017 15:51:13 GMT+0530 (IST)",
+        "charges": 2054
     },
     {
         "number": "AI 207",
@@ -55,9 +55,9 @@
         "departurecode": "DEL",
         "arrival": "Pune",
         "arrivalcode": "PNQ",
-        "departuretime": "Sun Oct 01 2017 15:51:13 GMT+0530 (IST)",
-        "arrivaltime": "Sun Oct 18 2017 15:51:13 GMT+0530 (IST)",
-        "charges": 2323
+        "departuretime": "Sun Oct 18 2017 15:51:13 GMT+0530 (IST)",
+        "arrivaltime": "Sun Oct 19 2017 15:51:13 GMT+0530 (IST)",
+        "charges": 1223
     },
     {
         "number": "AI 208",
@@ -65,9 +65,9 @@
         "departurecode": "PNQ",
         "arrival": "Delhi",
         "arrivalcode": "DEL",
-        "departuretime": "Sun Oct 01 2017 15:51:13 GMT+0530 (IST)",
-        "arrivaltime": "Sun Oct 18 2017 15:51:13 GMT+0530 (IST)",
-        "charges": 2323
+        "departuretime": "Sun Oct 18 2017 15:51:13 GMT+0530 (IST)",
+        "arrivaltime": "Sun Oct 21 2017 15:51:13 GMT+0530 (IST)",
+        "charges": 1003
     },
     {
         "number": "AI 209",
@@ -75,8 +75,8 @@
         "departurecode": "PNQ",
         "arrival": "Delhi",
         "arrivalcode": "DEL",
-        "departuretime": "Sun Oct 01 2017 15:51:13 GMT+0530 (IST)",
-        "arrivaltime": "Sun Oct 18 2017 15:51:13 GMT+0530 (IST)",
-        "charges": 2323
+        "departuretime": "Sun Oct 16 2017 15:51:13 GMT+0530 (IST)",
+        "arrivaltime": "Sun Oct 23 2017 15:51:13 GMT+0530 (IST)",
+        "charges": 1553
     }
 ]

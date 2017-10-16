@@ -6,9 +6,13 @@ import ExtendedSearch from '../shared/extended-search';
 class Search extends Component {
     render() {
         return (
-            <div>                
-                <SearchFilter searchFlight={this.props.searchFlight}/>
-                <ExtendedSearch />
+            <div>
+                <SearchFilter searchFlight={this.props.searchFlight} />
+                <ExtendedSearch min={this.props.min}
+                    max={this.props.max}
+                    step={this.props.step}
+                    marks={this.props.marks}
+                    sliderChange={this.props.sliderChange} />
             </div>
         );
     }

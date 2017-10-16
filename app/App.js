@@ -5,8 +5,6 @@ import Styles from './App.css'
 // Import custom components
 import HomeContainer from './container/HomeContainer.jsx';
 import Header from './components/shared/header'
-// import 'styles/bootstrap.min.css'
-// import 'styles/style.css'
 
 export default class App extends React.Component {
 
