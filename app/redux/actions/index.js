@@ -23,7 +23,8 @@ export const refineByPrice = (flights) => {
     };
 };
 
-export const search = (departureDate, arrivalDate, origin, destination, isRound) => {
+// departureDate, arrivalDate, origin, destination, isRound
+export const search = (filters) => {
     return (dispatch) => {
         dispatch(initAction);
         fetch('/api/flights').then(response => {
@@ -34,16 +35,20 @@ export const search = (departureDate, arrivalDate, origin, destination, isRound)
             var flights = [];
             var departFlights = data.filter((flight) => {
                 const flightDepartureDate = new Date(flight.departuretime);
-                if (flightDepartureDate >= new Date(departureDate)) {
+                if ((filters.origin == flight.departurecode || filters.origin == flight.departure) && 
+                    (filters.destination == flight.arrivalcode || filters.destination == flight.arrival) && 
+                    flightDepartureDate >= new Date(filters.departureDate)) {
                     return flight;
                 }
             });
 
             var arrivalFlights = [];
-            if (isRound) {
+            if (filters.isRound) {
                 arrivalFlights = data.filter((flight) => {
                     const flightArrivalDate = new Date(flight.arrivaltime);
-                    if (flightArrivalDate >= new Date(arrivalDate)) {
+                    if ((filters.origin == flight.arrivalcode || filters.origin == flight.arrival) && 
+                        (filters.destination == flight.departurecode || filters.destination == flight.departure) && 
+                        flightArrivalDate >= new Date(filters.arrivalDate)) {
                         return flight;
                     }
                 });

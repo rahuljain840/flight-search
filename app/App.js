@@ -12,7 +12,7 @@ export default class App extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="wrapper container divContainer">
         <Header />
         <div>
           <BrowserRouter>

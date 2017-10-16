@@ -3,17 +3,19 @@ import { render } from 'react-dom';
 
 import Search from '../search';
 import FlightResult from '../flight-result';
+import SearchBreadCrumb from '../shared/search-breadcrumb';
 
 class Home extends Component {
 
     render() {
         return (
-            <div className="col-sm-12">
-                <div className="col-sm-3">
-                    <Search searchFlight={this.props.searchFlight}/>
+            <div className="row">
+                <div className="col-md-3 left-section">
+                    <Search searchFlight={this.props.searchFlight} />
                 </div>
-                <div className="col-sm-9">
-                    <FlightResult flights={this.props.flights}/>
+                <div className="col-md-9 right-section">
+                    <SearchBreadCrumb filters={this.props.filters} />
+                    <FlightResult flights={this.props.flights} />
                 </div>
             </div>
         );

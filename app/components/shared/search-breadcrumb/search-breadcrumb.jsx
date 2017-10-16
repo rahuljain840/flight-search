@@ -3,18 +3,26 @@ import PropTypes from "prop-types";
 import { render } from 'react-dom';
 
 const SearchBreadCrumb = (props) => (
-    <div>
-        <div>
-            {
-                props.isRound ?
-                    `${props.origin} > ${props.destination} > ${props.origin}` :
-                    `${props.origin} > ${props.destination}`
-            }
-        </div>
-        <div>
-            <span>Depart: {props.departure}</span>
-            <span>Depart: {props.return}</span>
-        </div>
+    <div className="breadcrumbWrapper">
+        {props.filters ?
+            (
+                <div className="row">
+                    <div className="col-md-5 breadcrumb-title">
+                        <h3>
+                        {
+                            props.filters.isRound ?
+                                (`${props.filters.origin} > ${props.filters.destination} > ${props.filters.origin}`) :
+                                (`${props.filters.origin} > ${props.filters.destination}`)
+                        }
+                        </h3>
+                    </div>
+                    <div className="col-md-7">
+                        <div className="row"><b>Departure: {props.filters.departure}</b></div>
+                        <div className="row"><b>Arrival: {props.filters.return}</b></div>
+                    </div>
+                </div>
+            ) :
+            (<div></div>)}
     </div>
 );
 

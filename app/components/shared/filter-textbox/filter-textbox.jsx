@@ -3,12 +3,14 @@ import PropTypes from "prop-types";
 import { render } from 'react-dom';
 
 const FilterTextbox = (props) => (
-    <input type="text" className="form-control" placeholder={props.placeholderText} value={props.city} />
+    <div className="form-group">
+        <input type="text" className="form-control" placeholder={props.placeholderText} value={props.value} onChange={props.onChange} />
+    </div>
 );
 
 FilterTextbox.propTypes = {
     placeholderText: PropTypes.string,
-    city: PropTypes.string
+    onChange: PropTypes.func
 };
 
 export default FilterTextbox

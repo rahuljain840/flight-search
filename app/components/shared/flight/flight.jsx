@@ -6,26 +6,28 @@ import FlightDetail from '../flight-detail';
 class Flight extends Component {
 
     render() {
-        let isRound = this.props.flight && this.props.flight.destination;
+        let isRound = !!(this.props.flight && this.props.flight.destination);
         return (
-            <div className="border-box">
+            <div className="flightWrapper">
                 {this.props.flight ? (
-                    <div>
-                        <div className="flight">
-                            <div className="charges">
+                    <div className="row">
+                        <div className="flight col-md-10">
+                            <div className="charges row col-md-12">
+                                <h2> Rs.&nbsp;
                                 {isRound ?
                                     this.props.flight.source.charges + this.props.flight.destination.charges
                                     : this.props.flight.source.charges}
+                                </h2>
                             </div>
-                            <div className="route-details">
+                            <div className="route-details row">
                                 <FlightDetail flight={this.props.flight.source} />
                                 {isRound ?
                                     <FlightDetail flight={this.props.flight.destination} /> :
                                     null}
                             </div>
                         </div>
-                        <div className="book-flight">
-                            <button onClick="bookFlight">Book this flight</button>
+                        <div className="book-flight col-md-2">
+                            <button onClick={this.bookFlight}>Book flight</button>
                         </div>
                     </div>
                 ) : null}

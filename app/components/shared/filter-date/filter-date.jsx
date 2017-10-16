@@ -4,13 +4,22 @@ import DatePicker from 'react-datepicker';
 import moment from 'moment';
 import { render } from 'react-dom';
 
-const FilterDate = (props) => (
-    <DatePicker
-        selected={props.selectedDate}
-        minDate={props.minDate}
-        placeholderText={props.placeholderText}
-    />
-);
+class FilterDate extends Component {
+
+    render() {
+        return (
+            <div className="form-group">
+                <DatePicker
+                    selected={this.props.selectedDate}
+                    minDate={this.props.minDate}
+                    onChange={this.props.onChange}
+                    placeholderText={this.props.placeholderText}
+                    className="form-control"
+                />
+            </div>
+        );
+    }
+}
 
 FilterDate.propTypes = {
     placeholderText: PropTypes.string

@@ -6,8 +6,7 @@ import ExtendedSearch from '../shared/extended-search';
 class Search extends Component {
     render() {
         return (
-            <div>
-                <h1>Search</h1>
+            <div>                
                 <SearchFilter searchFlight={this.props.searchFlight}/>
                 <ExtendedSearch />
             </div>
