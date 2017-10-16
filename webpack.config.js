@@ -39,9 +39,12 @@ module.exports = {
     }, {
       test: /\.json?$/,
       loader: 'json'
-    }, {
+    }, { 
       test: /\.css$/,
-      loader: 'style!css?modules&localIdentName=[name]---[local]---[hash:base64:5]'
+      loader: "style-loader!css-loader?importLoaders=1" 
+    },{ 
+      test: /\.(png|woff|woff2|eot|ttf|svg)$/, 
+      loader: 'url-loader?limit=100000' 
     }]
   }
 };

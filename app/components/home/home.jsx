@@ -8,11 +8,11 @@ class Home extends Component {
 
     render() {
         return (
-            <div className="wraper">
-                <div className="left-section">
+            <div className="col-sm-12">
+                <div className="col-sm-3">
                     <Search searchFlight={this.props.searchFlight}/>
                 </div>
-                <div className="right-section">
+                <div className="col-sm-9">
                     <FlightResult flights={this.props.flights}/>
                 </div>
             </div>
