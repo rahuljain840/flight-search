@@ -74,3 +74,22 @@ export const search = (filters) => {
     }
 }
 
+export const extendedSearch = (filters, flightArray, refineFilterValue) => {
+    return (dispatch) => {
+        dispatch(initAction);
+        var flights = flightArray.filter((flight) => {
+            if (filters.isRound) {
+                if ((flight.source.charges + flight.destination.charges) <= refineFilterValue) {
+                    return flight;
+                }
+            }
+            else {
+                if (flight.source.charges <= refineFilterValue) {
+                    return flight;
+                }
+            }
+        });
+        dispatch(refineByPrice(flights));
+    }
+}
+

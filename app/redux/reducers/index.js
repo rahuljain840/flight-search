@@ -1,6 +1,8 @@
 import { INIT_ACTION, SEARCH_FLIGHTS, REFINE_BY_PRICE } from '../actions';
 const initialState = {
     flights: [],
+    extendedSearchFlights: [],
+    isRefineByPrice: false,
     isSuccess: false,
     isLoading: false
 };
@@ -10,13 +12,15 @@ export const flightReducer = (state = initialState, action) => {
         case INIT_ACTION:
             return {
                 ...state,
-                isLoading: true
+                isLoading: true,
+                isRefineByPrice: false
             }
         case SEARCH_FLIGHTS:
             return {
                 ...state,
                 isSuccess: true,
                 isLoading: false,
+                isRefineByPrice: false,
                 flights: action.data
             };
 
@@ -25,7 +29,8 @@ export const flightReducer = (state = initialState, action) => {
                 ...state,
                 isSuccess: true,
                 isLoading: false,
-                flights: action.data
+                isRefineByPrice: true,
+                extendedSearchFlights: action.data
             };
 
         default:

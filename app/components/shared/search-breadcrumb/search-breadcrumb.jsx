@@ -12,13 +12,13 @@ const SearchBreadCrumb = (props) => (
                         <h3>
                         {
                             props.filters.isRound ?
-                                (`${props.filters.origin} > ${props.filters.destination} > ${props.filters.origin}`) :
-                                (`${props.filters.origin} > ${props.filters.destination}`)
+                                (`${props.filters.origin.toUpperCase()} > ${props.filters.destination.toUpperCase()} > ${props.filters.origin.toUpperCase()}`) :
+                                (`${props.filters.origin.toUpperCase()} > ${props.filters.destination.toUpperCase()}`)
                         }
                         </h3>
                     </div>
                     <div className="col-md-7">                        
-                        <div className="row"><b>Departure: {moment(props.filters.departureDate).format('DD MMM YYYY')}</b></div>
+                        <div className="row breadcrumb-title"><b>Departure: {moment(props.filters.departureDate).format('DD MMM YYYY')}</b></div>
                         {props.filters.isRound ? 
                         <div className="row"><b>Arrival: {moment(props.filters.arrivalDate).format('DD MMM YYYY')}</b></div> : 
                         <div />
