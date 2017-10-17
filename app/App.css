@@ -18,6 +18,7 @@ body {
 	border: 1px solid gray;
     border-radius: 11px;
     margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .divHeading {
@@ -60,4 +61,8 @@ body {
   border: 1px solid gray;
   margin-top: 15px;
   padding: 10px;
+}
+
+.right-section{
+    padding-bottom: 15px;
 }

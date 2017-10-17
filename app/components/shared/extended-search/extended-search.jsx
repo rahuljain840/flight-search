@@ -15,9 +15,9 @@ class ExtendedSearch extends Component {
                 <h4>Refine flight search</h4>
                 <Slider
                     min={0}
-                    max={9000}
+                    max={6000}
                     step={500}
-                    marks={{ 0: 0, 1000: 1000, 2000: 2000, 3000: 3000, 4000: 4000, 5000: 5000, 6000: 6000, 7000: 7000, 8000: 8000, 9000: 9000 }}
+                    marks={{ 0: 0, 1000: 1000, 2000: 2000, 3000: 3000, 4000: 4000, 5000: 5000, 6000: 6000 }}
                     onChange={this.handleChange} />
             </div>
         );
