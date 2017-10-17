@@ -23,21 +23,7 @@ class HomeContainer extends Component {
         // this.setState({ flights: this.props.flights });
     }
 
-    sliderChange = (value) => {
-        // var flights = this.props.flights.filter((flight) => {
-        //     if (this.state.filters.isRound) {
-        //         if ((flight.source.charges + flight.destination.charges) <= value) {
-        //             return flight;
-        //         }
-        //     }
-        //     else {
-        //         if (flight.source.charges <= value) {
-        //             return flight;
-        //         }
-        //     }
-        // });
-
-        // this.setState({ flights: flights });
+    sliderChange = (value) => {        
         this.props.extendSearch(this.state.filters, this.props.flights, value);
     }
 
